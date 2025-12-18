@@ -138,7 +138,7 @@ section {
 
 .firstView {
   height: 100vh;
-  background-image: url(../images/1stView.JPG);
+  background-image: url("../images/1stView.JPG");
   background-size: cover;
   background-position: center;
   position: relative;
