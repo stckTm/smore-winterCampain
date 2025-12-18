@@ -4,14 +4,12 @@
   height: 100vh;
   background-size: cover;
   background-position: center;
-
-  position: relative;
+  display: flex;
+  align-items: center;
 
   .copy {
-    position: absolute;
     top: 50%;
     left: $padding-md;
-    transform: translateY(-50%);
     color: $cWhite;
 
     display: flex;
@@ -19,14 +17,15 @@
     gap: $space-lg;
 
     &__main {
-      @extend .font-xl;
+      @extend .title-font;
       img {
         width: 250px;
         height: auto;
       }
     }
-    &__sub {
-      @extend .font-lg;
+    &__sub h2 {
+      @extend .subTitle-font;
+      font-weight: 400;
     }
   }
 }
@@ -34,8 +33,11 @@
 .overView {
   display: flex;
   flex-direction: column;
-  // gap: $space-md;
   background-color: $cCream;
+
+  .section-header h3 {
+    @extend .subTitle-font;
+  }
 
   &__main {
     width: 100%;
@@ -58,8 +60,8 @@
     flex-direction: column;
     gap: $space-sm;
 
-    &__copy {
-      @extend .font-lg;
+    &__copy h2 {
+      @extend .font-xl;
       text-align: center;
     }
 
@@ -86,21 +88,21 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      align-items: center;
+      justify-content: center;
       margin: 0 auto;
       gap: $space-xs;
 
       @extend .font-sans;
 
       li {
-        padding: 5px $padding-md;
+        padding: 5px 20px;
         border-radius: 20px;
         background-color: $cGray;
         text-align: center;
         color: $cWhite;
 
         &:nth-child(odd) {
-          width: 200px;
+          width: 180px;
         }
       }
     }
@@ -176,6 +178,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      align-items: center;
       gap: $space-lg;
 
       p {
@@ -227,13 +230,13 @@
   align-items: center;
   gap: $space-md;
 
-.container{
-  align-items: center;
-
-  .flex-control{
+  .container {
     align-items: center;
+
+    .flex-control {
+      align-items: center;
+    }
   }
-}
 
   &__product {
     text-align: center;
@@ -258,12 +261,12 @@
 
   &__text {
     margin: 0 auto;
-    padding: $padding-md $padding-md $padding-lg;
+    padding: $padding-md $padding-md 0;
     display: flex;
     flex-direction: column;
     color: $cGray;
     text-align: center;
-    height: 60vh;
+    height: 40vh;
     justify-content: space-around;
 
     h1 {

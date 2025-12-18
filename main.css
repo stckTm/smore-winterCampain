@@ -28,25 +28,92 @@ button {
   font-family: "Helvetica", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
 }
 
-.title-font, .concept__text h1, .about__text h1 {
-  font-size: 40px;
+.title-font, .firstView .copy__main, .concept__text h1, .about__text h1 {
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
+@media (min-width: 320px) {
+  .title-font, .firstView .copy__main, .concept__text h1, .about__text h1 {
+    font-size: 25.6px;
+  }
+}
+@media (min-width: 768px) {
+  .title-font, .firstView .copy__main, .concept__text h1, .about__text h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .title-font, .firstView .copy__main, .concept__text h1, .about__text h1 {
+    font-size: 48px;
+  }
+}
 
-.font-xl, .firstView .copy__main, .setItems__item__title, .priceCard__specialPrice h2 {
+.subTitle-font, .firstView .copy__sub h2, .overView .section-header h3, .section-header h3 {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (min-width: 320px) {
+  .subTitle-font, .firstView .copy__sub h2, .overView .section-header h3, .section-header h3 {
+    font-size: 17.6px;
+  }
+}
+@media (min-width: 768px) {
+  .subTitle-font, .firstView .copy__sub h2, .overView .section-header h3, .section-header h3 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1280px) {
+  .subTitle-font, .firstView .copy__sub h2, .overView .section-header h3, .section-header h3 {
+    font-size: 26.4px;
+  }
+}
+
+.font-xl, .overView__sub__copy h2, .setItems__item__title, .priceCard__specialPrice h2, .section-header h2 {
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
+@media (min-width: 320px) {
+  .font-xl, .overView__sub__copy h2, .setItems__item__title, .priceCard__specialPrice h2, .section-header h2 {
+    font-size: 25.6px;
+  }
+}
+@media (min-width: 768px) {
+  .font-xl, .overView__sub__copy h2, .setItems__item__title, .priceCard__specialPrice h2, .section-header h2 {
+    font-size: 38.4px;
+  }
+}
+@media (min-width: 1280px) {
+  .font-xl, .overView__sub__copy h2, .setItems__item__title, .priceCard__specialPrice h2, .section-header h2 {
+    font-size: 44.8px;
+  }
+}
 
-.font-lg, .firstView .copy__sub, .overView__main h1, .overView__main p, .overView__sub__copy, .setItems__item__main h2, .priceCard__info h2, .purchase-btn {
+.font-lg, .overView__main h1, .overView__main p, .setItems__item__main h2, .priceCard__info h2, .purchase-btn {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media (min-width: 320px) {
+  .font-lg, .overView__main h1, .overView__main p, .setItems__item__main h2, .priceCard__info h2, .purchase-btn {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .font-lg, .overView__main h1, .overView__main p, .setItems__item__main h2, .priceCard__info h2, .purchase-btn {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1280px) {
+  .font-lg, .overView__main h1, .overView__main p, .setItems__item__main h2, .priceCard__info h2, .purchase-btn {
+    font-size: 28px;
+  }
 }
 
 .font-md, .overView__sub__text, .campain__lineUps li p, .setItems__item__sub p, .priceCard .arrow {
@@ -54,6 +121,21 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media (min-width: 320px) {
+  .font-md, .overView__sub__text, .campain__lineUps li p, .setItems__item__sub p, .priceCard .arrow {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .font-md, .overView__sub__text, .campain__lineUps li p, .setItems__item__sub p, .priceCard .arrow {
+    font-size: 16.8px;
+  }
+}
+@media (min-width: 1280px) {
+  .font-md, .overView__sub__text, .campain__lineUps li p, .setItems__item__sub p, .priceCard .arrow {
+    font-size: 19.6px;
+  }
 }
 
 .font-sm, .overView__sub__attention, .priceCard__info ul {
@@ -63,17 +145,41 @@ button {
   line-height: normal;
   color: #919190;
 }
+@media (min-width: 768px) {
+  .font-sm, .overView__sub__attention, .priceCard__info ul {
+    font-size: 16.8px;
+  }
+}
+@media (min-width: 1280px) {
+  .font-sm, .overView__sub__attention, .priceCard__info ul {
+    font-size: 19.6px;
+  }
+}
 
 section {
   width: 100%;
-  padding: 70px 30px 40px;
+  padding: 60px 30px;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  section {
+    padding: 7% 7%;
+  }
 }
 
 .section-header {
   width: 100%;
   border-bottom: #000000 solid 1px;
-  margin: 28px 0;
+  margin-bottom: 30px;
+  padding-left: 3%;
+}
+.section-header h2 {
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .section-header {
+    padding-left: 7%;
+  }
 }
 
 .flex-control {
@@ -140,13 +246,12 @@ section {
   height: 100vh;
   background-size: cover;
   background-position: center;
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 .firstView .copy {
-  position: absolute;
   top: 50%;
   left: 30px;
-  transform: translateY(-50%);
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -156,6 +261,10 @@ section {
   width: 250px;
   height: auto;
 }
+.firstView .copy__sub h2 {
+  font-weight: 400;
+}
+
 .overView {
   display: flex;
   flex-direction: column;
@@ -174,36 +283,36 @@ section {
 .overView__sub {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 18px;
 }
-.overView__sub__copy {
+.overView__sub__copy h2 {
   text-align: center;
 }
 .campain .section-header {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 .campain__header {
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 .campain__header ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   gap: 5px;
 }
 .campain__header ul li {
-  padding: 5px 30px;
+  padding: 5px 20px;
   border-radius: 20px;
   background-color: #919190;
   text-align: center;
   color: #ffffff;
 }
 .campain__header ul li:nth-child(odd) {
-  width: 200px;
+  width: 180px;
 }
 .campain__lineUps {
   width: 95%;
@@ -211,7 +320,7 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 14px 5%;
+  gap: 18px 5%;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -231,22 +340,22 @@ section {
   gap: 56px;
 }
 .setItems__item {
-  padding: 30px 14px;
+  padding: 30px 18px;
   border: solid 1px #000000;
 }
 .setItems__item__title {
   font-weight: 600;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 .setItems__item .flex-control {
   width: 100%;
-  gap: 14px;
+  gap: 18px;
 }
 .setItems__item__main {
   width: 100%;
 }
 .setItems__item__main h2 {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 .setItems__item__img {
   height: 30vh;
@@ -261,13 +370,14 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   gap: 56px;
 }
 .setItems__item__sub .purchase {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 28px;
+  gap: 30px;
 }
 
 .concept {
@@ -292,13 +402,13 @@ section {
 }
 .concept__text h1 {
   font-weight: 400;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
 .otherProducts {
   justify-content: center;
   align-items: center;
-  gap: 28px;
+  gap: 30px;
 }
 .otherProducts .container {
   align-items: center;
@@ -308,7 +418,7 @@ section {
 }
 .otherProducts__product {
   text-align: center;
-  padding: 28px 0;
+  padding: 30px 0;
 }
 .otherProducts__product img {
   width: 100%;
@@ -325,47 +435,44 @@ section {
 }
 .about__text {
   margin: 0 auto;
-  padding: 30px 30px 40px;
+  padding: 30px 30px 0;
   display: flex;
   flex-direction: column;
   color: #919190;
   text-align: center;
-  height: 60vh;
+  height: 40vh;
   justify-content: space-around;
 }
 .about__text h1 {
   font-weight: 400;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
 @media (min-width: 320px) {
   h1 {
-    background-color: red;
+    border-bottom: solid 3px red;
   }
 }
 @media (min-width: 376px) {
   h1 {
-    background-color: yellow;
+    border-bottom: solid 3px yellow;
   }
 }
 @media (min-width: 768px) {
   h1 {
-    background-color: aqua !important;
-  }
-  .flex-control {
-    flex-direction: row !important;
-  }
-  .flex-text {
-    display: flex;
-    flex-direction: row;
-    gap: 0;
+    border-bottom: solid 3px aqua !important;
   }
   .overView .flex-control {
+    width: 100%;
     flex-direction: row-reverse !important;
-    gap: 28px;
+    justify-content: space-between;
+    gap: 30px;
   }
   .overView__main {
-    width: 40%;
+    width: 80%;
+  }
+  .overView__sub {
+    justify-content: flex-end;
   }
   .campain__header {
     width: 100%;
@@ -376,44 +483,18 @@ section {
   .campain__lineUps {
     flex-wrap: nowrap;
   }
+  .setItems {
+    padding: 7% 7%;
+  }
   .setItems__item {
-    width: 100%;
+    padding: 5% 7%;
   }
-  .setItems__item .flex-control {
-    flex-direction: row-reverse !important;
-    justify-content: space-between;
-  }
-  .setItems__item__main {
-    padding-left: 28px;
-    padding-bottom: 14px;
-  }
-  .setItems__item__sub {
-    padding-left: 28px;
-    width: 50%;
-  }
-  .setItems__item__img {
-    width: 40%;
-    height: 100%;
-  }
-  .setItems__item__img img {
-    height: 100% !important;
-    max-height: 50vh;
-  }
-  .setItems__item .purchase {
+  .setItems .purchase {
     width: 80%;
+    justify-content: space-around;
   }
-  .concept {
-    flex-direction: row-reverse !important;
-    align-items: center;
-    height: 80vh;
-  }
-  .concept img {
-    height: 100%;
-    width: 60%;
-    object-fit: cover;
-  }
-  .concept__text {
-    height: 60%;
+  .otherProducts .flex-control {
+    flex-direction: row !important;
   }
   .otherProducts__product {
     width: 30%;
@@ -431,11 +512,77 @@ section {
 }
 @media (min-width: 1280px) {
   h1 {
-    background-color: green !important;
+    border-bottom: solid 3px green !important;
+  }
+  .flex-text {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+  .section-header .flex-text {
+    gap: 56px;
+    align-items: baseline;
+  }
+  .firstView .copy__main .flex-text {
+    gap: 40px !important;
+  }
+  .overView__main {
+    width: 35%;
+  }
+  .campain__header ul {
+    width: 70%;
+    margin-left: 0;
+    gap: 5px;
+  }
+  .campain__header ul li {
+    width: 20% !important;
+  }
+  .setItems .setItems__item {
+    width: 100%;
+  }
+  .setItems .setItems__item .flex-control {
+    flex-direction: row-reverse !important;
+    justify-content: space-between;
+  }
+  .setItems .setItems__item__main {
+    padding-left: 30px;
+    padding-bottom: 18px;
+  }
+  .setItems .setItems__item__sub {
+    padding-left: 30px;
+    width: 50%;
+  }
+  .setItems .setItems__item__img {
+    width: 40%;
+    height: 100%;
+  }
+  .setItems .setItems__item__img img {
+    height: 100% !important;
+    max-height: 50vh;
+  }
+  .concept {
+    flex-direction: row-reverse !important;
+    align-items: center;
+    height: 80vh;
+  }
+  .concept img {
+    height: 100%;
+    width: 60%;
+    object-fit: cover;
+  }
+  .concept__text {
+    height: 60%;
+  }
+  .otherProducts .container {
+    display: flex;
+  }
+  .otherProducts__product {
+    width: auto;
+    padding: 30px;
   }
 }
 @media (min-width: 2560px) {
   h1 {
-    background-color: purple !important;
+    border-bottom: solid 3px purple !important;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -1,3 +1,5 @@
+@use "mixins" as mx;
+
 $cWhite: #ffffff;
 $cBlack: #000000;
 $cGray: #919190;
@@ -7,19 +9,21 @@ $cCream: #f8f7f2;
 $cRed: #ff3131;
 
 $space-xs: 5px;
-$space-sm: 14px;
-$space-md: 28px;
+$space-sm: 18px;
+$space-md: 30px;
 $space-lg: 56px;
 
-$padding-xl: 70px;
+$padding-xl: 60px;
 $padding-lg: 40px;
 $padding-md: 30px;
+$padding-sm: 15px;
 
 $font-sm: 14px;
 $font-md: 14px;
 $font-lg: 20px;
 $font-xl: 32px;
 $font-strong: 40px;
+$font-subStrong: 22px;
 
 * {
   margin: 0;
@@ -53,10 +57,39 @@ button {
 }
 
 .title-font {
-  font-size: $font-strong;
+  font-size: $font-xl;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @include mx.mq("spS") {
+    font-size: $font-xl * 0.8;
+  }
+
+  @include mx.mq("tab") {
+    font-size: $font-strong;
+  }
+  @include mx.mq("laptop") {
+    font-size: $font-strong * 1.2;
+  }
+}
+
+.subTitle-font {
+  font-size: $font-subStrong;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @include mx.mq("spS") {
+    font-size: $font-subStrong * 0.8;
+  }
+
+  @include mx.mq("tab") {
+    font-size: $font-subStrong;
+  }
+  @include mx.mq("laptop") {
+    font-size: $font-subStrong * 1.2;
+  }
 }
 
 .font-xl {
@@ -64,6 +97,17 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @include mx.mq("spS") {
+    font-size: $font-xl * 0.8;
+  }
+
+  @include mx.mq("tab") {
+    font-size: $font-xl * 1.2;
+  }
+  @include mx.mq("laptop") {
+    font-size: $font-xl * 1.4;
+  }
 }
 
 .font-lg {
@@ -71,6 +115,17 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @include mx.mq("spS") {
+    font-size: $font-lg * 0.8;
+  }
+
+  @include mx.mq("tab") {
+    font-size: $font-lg * 1.2;
+  }
+  @include mx.mq("laptop") {
+    font-size: $font-lg * 1.4;
+  }
 }
 
 .font-md {
@@ -78,6 +133,16 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  @include mx.mq("spS") {
+    font-size: 14px;
+  }
+
+  @include mx.mq("tab") {
+    font-size: $font-md * 1.2;
+  }
+  @include mx.mq("laptop") {
+    font-size: $font-md * 1.4;
+  }
 }
 
 .font-sm {
@@ -86,18 +151,42 @@ button {
   font-weight: 200;
   line-height: normal;
   color: $cGray;
+  @include mx.mq("tab") {
+    font-size: $font-sm * 1.2;
+  }
+  @include mx.mq("laptop") {
+    font-size: $font-sm * 1.4;
+  }
 }
 
 section {
   width: 100%;
-  padding: $padding-xl $padding-md $padding-lg;
+  padding: $padding-xl $padding-md;
   margin: 0 auto;
+
+  @include mx.mq("tab") {
+    padding: 7% 7%;
+  }
 }
 
 .section-header {
   width: 100%;
   border-bottom: $cBlack solid 1px;
-  margin: $space-md 0;
+  margin-bottom: $space-md;
+  padding-left: 3%;
+
+  h2 {
+    @extend .font-xl;
+    font-weight: 400;
+  }
+
+  h3 {
+    @extend .subTitle-font;
+  }
+
+  @include mx.mq("tab") {
+    padding-left: 7%;
+  }
 }
 
 .flex-control {
@@ -107,5 +196,4 @@ section {
 
 .grid-control {
   display: grid;
-
 }

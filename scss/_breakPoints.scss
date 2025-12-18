@@ -3,34 +3,32 @@
 
 @include mx.mq("spS") {
   h1 {
-    background-color: red;
+    border-bottom: solid 3px red;
   }
 }
 @include mx.mq("spM") {
   h1 {
-    background-color: yellow;
+    border-bottom: solid 3px yellow;
   }
 }
 @include mx.mq("tab") {
   h1 {
-    background-color: aqua !important;
-  }
-  .flex-control {
-    flex-direction: row !important;
-  }
-  .flex-text {
-    display: flex;
-    flex-direction: row;
-    gap: 0;
+    border-bottom: solid 3px aqua !important;
   }
 
   .overView {
     .flex-control {
+      width: 100%;
       flex-direction: row-reverse !important;
+      justify-content: space-between;
       gap: $space-md;
     }
     &__main {
-      width: 40%;
+      width: 80%;
+    }
+
+    &__sub {
+      justify-content: flex-end;
     }
   }
 
@@ -47,56 +45,24 @@
     }
   }
 
-  .setItems__item {
-    width: 100%;
+  .setItems {
+    padding: 7% 7%;
 
-    .flex-control {
-      flex-direction: row-reverse !important;
-      justify-content: space-between;
+    &__item{
+      padding: 5% 7%;
     }
 
-    &__main {
-      padding-left: $space-md;
-      padding-bottom: $space-sm;
-    }
-
-    &__sub {
-      padding-left: $space-md;
-
-      width: 50%;
-    }
-
-    &__img {
-      width: 40%;
-      height: 100%;
-
-      img {
-        height: 100% !important;
-        max-height: 50vh;
-      }
-    }
     .purchase {
       width: 80%;
-    }
-  }
-
-  .concept {
-    flex-direction: row-reverse !important;
-    align-items: center;
-    height: 80vh;
-
-    img {
-      height: 100%;
-      width: 60%;
-      object-fit: cover;
-    }
-
-    &__text {
-      height: 60%;
+      justify-content: space-around;
     }
   }
 
   .otherProducts {
+    .flex-control {
+      flex-direction: row !important;
+    }
+
     &__product {
       width: 30%;
     }
@@ -117,11 +83,110 @@
 
 @include mx.mq("laptop") {
   h1 {
-    background-color: green !important;
+    border-bottom: solid 3px green !important;
+  }
+
+  .flex-text {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .section-header {
+    .flex-text {
+      gap: $space-lg;
+      align-items: baseline;
+    }
+  }
+
+  .firstView {
+    .copy__main {
+      .flex-text {
+        gap: $font-strong !important;
+      }
+    }
+  }
+
+  .overView {
+    &__main {
+      width: 35%;
+    }
+  }
+
+  .campain {
+    &__header {
+      ul {
+        width: 70%;
+        margin-left: 0;
+        gap: $space-xs;
+        li {
+          width: 20% !important;
+        }
+      }
+    }
+  }
+
+  .setItems {
+    .setItems__item {
+      width: 100%;
+
+      .flex-control {
+        flex-direction: row-reverse !important;
+        justify-content: space-between;
+      }
+
+      &__main {
+        padding-left: $space-md;
+        padding-bottom: $space-sm;
+      }
+
+      &__sub {
+        padding-left: $space-md;
+
+        width: 50%;
+      }
+
+      &__img {
+        width: 40%;
+        height: 100%;
+
+        img {
+          height: 100% !important;
+          max-height: 50vh;
+        }
+      }
+    }
+  }
+
+  .concept {
+    flex-direction: row-reverse !important;
+    align-items: center;
+    height: 80vh;
+
+    img {
+      height: 100%;
+      width: 60%;
+      object-fit: cover;
+    }
+
+    &__text {
+      height: 60%;
+    }
+  }
+
+  .otherProducts {
+    .container {
+      display: flex;
+    }
+
+    &__product {
+      width: auto;
+      padding: $space-md;
+    }
   }
 }
 @include mx.mq("retina") {
   h1 {
-    background-color: purple !important;
+    border-bottom: solid 3px purple !important;
   }
 }
