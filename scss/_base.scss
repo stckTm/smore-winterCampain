@@ -1,0 +1,276 @@
+@use "variables" as *;
+
+.firstView {
+  height: 100vh;
+  background-image: url(/images/1stView.JPG);
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+
+  .copy {
+    position: absolute;
+    top: 50%;
+    left: $padding-md;
+    transform: translateY(-50%);
+    color: $cWhite;
+
+    display: flex;
+    flex-direction: column;
+    gap: $space-lg;
+
+    &__main {
+      @extend .font-xl;
+      img {
+        width: 250px;
+        height: auto;
+      }
+    }
+    &__sub {
+      @extend .font-lg;
+    }
+  }
+}
+
+.overView {
+  display: flex;
+  flex-direction: column;
+  // gap: $space-md;
+  background-color: $cCream;
+
+  &__main {
+    width: 100%;
+    text-align: center;
+    h1 {
+      @extend .font-lg;
+      font-weight: 700;
+    }
+    p {
+      @extend .font-lg;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__sub {
+    display: flex;
+    flex-direction: column;
+    gap: $space-sm;
+
+    &__copy {
+      @extend .font-lg;
+      text-align: center;
+    }
+
+    &__text {
+      @extend .font-md;
+    }
+
+    &__attention {
+      @extend .font-sm;
+    }
+  }
+}
+
+.campain {
+  .section-header {
+    margin-bottom: $space-sm;
+  }
+  &__header {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: $space-md;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 0 auto;
+      gap: $space-xs;
+
+      @extend .font-sans;
+
+      li {
+        padding: 5px $padding-md;
+        border-radius: 20px;
+        background-color: $cGray;
+        text-align: center;
+        color: $cWhite;
+
+        &:nth-child(odd) {
+          width: 200px;
+        }
+      }
+    }
+  }
+
+  &__lineUps {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: $space-sm 5%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    @extend .font-sans;
+
+    li {
+      width: 30vw;
+      max-width: 300px;
+      text-align: center;
+
+      img {
+        width: 100%;
+      }
+
+      p {
+        @extend .font-md;
+      }
+    }
+  }
+}
+
+.setItems {
+  padding: 0px $padding-md $padding-lg;
+  display: flex;
+  flex-direction: column;
+  gap: $space-lg;
+
+  &__item {
+    padding: $padding-md $space-sm;
+    border: solid 1px $cBlack;
+    &__title {
+      @extend .font-xl;
+      font-weight: 600;
+      margin-bottom: $space-md;
+    }
+
+    .flex-control {
+      width: 100%;
+      gap: $space-sm;
+    }
+
+    &__main {
+      width: 100%;
+      h2 {
+        @extend .font-lg;
+        margin-bottom: $space-sm;
+      }
+    }
+
+    &__img {
+      height: 30vh;
+      width: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__sub {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: $space-lg;
+
+      p {
+        @extend .font-md;
+      }
+
+      .purchase {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: $space-md;
+      }
+    }
+  }
+}
+
+.concept {
+  height: 100vh;
+  padding: 0;
+  background-color: $cCream;
+
+  img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  &__text {
+    height: 50vh;
+    // width: 80%;
+    margin: 0 auto;
+    padding: $padding-md $padding-md $padding-lg;
+    display: flex;
+    flex-direction: column;
+    color: $cGray;
+    text-align: center;
+    justify-content: space-between;
+
+    h1 {
+      @extend .title-font;
+      font-weight: 400;
+      margin-bottom: $space-sm;
+    }
+  }
+}
+
+.otherProducts {
+  justify-content: center;
+  align-items: center;
+  gap: $space-md;
+
+.container{
+  align-items: center;
+
+  .flex-control{
+    align-items: center;
+  }
+}
+
+  &__product {
+    text-align: center;
+    padding: $space-md 0;
+    // width: 30%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.about {
+  height: 100vh;
+  background-color: $cCream;
+
+  img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+  }
+
+  &__text {
+    margin: 0 auto;
+    padding: $padding-md $padding-md $padding-lg;
+    display: flex;
+    flex-direction: column;
+    color: $cGray;
+    text-align: center;
+    height: 60vh;
+    justify-content: space-around;
+
+    h1 {
+      @extend .title-font;
+      font-weight: 400;
+      margin-bottom: $space-sm;
+    }
+  }
+}

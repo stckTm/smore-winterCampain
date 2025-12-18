@@ -1,0 +1,111 @@
+$cWhite: #ffffff;
+$cBlack: #000000;
+$cGray: #919190;
+// $cGray: #B3B3B3;
+$cDarkGray: #797979;
+$cCream: #f8f7f2;
+$cRed: #ff3131;
+
+$space-xs: 5px;
+$space-sm: 14px;
+$space-md: 28px;
+$space-lg: 56px;
+
+$padding-xl: 70px;
+$padding-lg: 40px;
+$padding-md: 30px;
+
+$font-sm: 14px;
+$font-md: 14px;
+$font-lg: 20px;
+$font-xl: 32px;
+$font-strong: 40px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Noto Serif JP", serif;
+  font-size: $font-md;
+  font-weight: 400;
+}
+
+button {
+  font-family: "Noto Serif JP", serif;
+}
+
+.font-sans {
+  font-family: "Helvetica", "Arial", "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", "Meiryo", sans-serif;
+}
+
+.title-font {
+  font-size: $font-strong;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.font-xl {
+  font-size: $font-xl;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.font-lg {
+  font-size: $font-lg;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.font-md {
+  font-size: $font-md;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.font-sm {
+  font-size: $font-sm;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  color: $cGray;
+}
+
+section {
+  width: 100%;
+  padding: $padding-xl $padding-md $padding-lg;
+  margin: 0 auto;
+}
+
+.section-header {
+  width: 100%;
+  border-bottom: $cBlack solid 1px;
+  margin: $space-md 0;
+}
+
+.flex-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-control {
+  display: grid;
+
+}
