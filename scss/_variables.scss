@@ -3,7 +3,6 @@
 $cWhite: #ffffff;
 $cBlack: #000000;
 $cGray: #919190;
-// $cGray: #B3B3B3;
 $cDarkGray: #797979;
 $cCream: #f8f7f2;
 $cRed: #ff3131;
@@ -185,7 +184,8 @@ section {
   }
 
   @include mx.mq("tab") {
-    padding-left: 7%;
+    width: 100%;
+    padding-left: 5%;
   }
 }
 

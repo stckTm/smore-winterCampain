@@ -48,7 +48,7 @@
   .setItems {
     padding: 7% 7%;
 
-    &__item{
+    &__item {
       padding: 5% 7%;
     }
 
@@ -116,13 +116,21 @@
   .campain {
     &__header {
       ul {
-        width: 70%;
+        width: 100%;
         margin-left: 0;
-        gap: $space-xs;
+        justify-content: space-between;
         li {
-          width: 20% !important;
+          width: 23% !important;
+          font-size: $font-md !important;
         }
       }
+    }
+
+    &__lineUps {
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
     }
   }
 
@@ -151,8 +159,9 @@
         height: 100%;
 
         img {
-          height: 100% !important;
-          max-height: 50vh;
+          width: 100% !important;
+          max-height: 40vh;
+          object-fit: contain;
         }
       }
     }
@@ -182,6 +191,22 @@
     &__product {
       width: auto;
       padding: $space-md;
+    }
+  }
+
+  .about {
+
+    .flex-control {
+      flex-direction: row;
+
+      img {
+        width: 60%;
+        object-fit: contain;
+      }
+      &__text {
+        height: 100%;
+
+      }
     }
   }
 }
