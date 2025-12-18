@@ -94,25 +94,25 @@ button {
   }
 }
 
-.font-lg, .overView__main h1, .overView__main p, .setItems__item__main h2, .priceCard__info h2, .purchase-btn {
+.font-lg, .overView__main h1, .overView__main p, .setItems__item__main h2, .otherProducts__product h3, .priceCard__info h2, .purchase-btn {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 @media (min-width: 320px) {
-  .font-lg, .overView__main h1, .overView__main p, .setItems__item__main h2, .priceCard__info h2, .purchase-btn {
+  .font-lg, .overView__main h1, .overView__main p, .setItems__item__main h2, .otherProducts__product h3, .priceCard__info h2, .purchase-btn {
     font-size: 16px;
   }
 }
 @media (min-width: 768px) {
-  .font-lg, .overView__main h1, .overView__main p, .setItems__item__main h2, .priceCard__info h2, .purchase-btn {
+  .font-lg, .overView__main h1, .overView__main p, .setItems__item__main h2, .otherProducts__product h3, .priceCard__info h2, .purchase-btn {
     font-size: 24px;
   }
 }
 @media (min-width: 1280px) {
-  .font-lg, .overView__main h1, .overView__main p, .setItems__item__main h2, .priceCard__info h2, .purchase-btn {
-    font-size: 28px;
+  .font-lg, .overView__main h1, .overView__main p, .setItems__item__main h2, .otherProducts__product h3, .priceCard__info h2, .purchase-btn {
+    font-size: 26px;
   }
 }
 
@@ -364,7 +364,7 @@ section {
 .setItems__item__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .setItems__item__sub {
   display: flex;
@@ -423,7 +423,6 @@ section {
 .otherProducts__product img {
   width: 100%;
 }
-
 .about {
   height: 100vh;
   background-color: #f8f7f2;
@@ -490,7 +489,7 @@ section {
     padding: 5% 7%;
   }
   .setItems .purchase {
-    width: 80%;
+    width: 100%;
     justify-content: space-around;
   }
   .otherProducts .flex-control {
