@@ -1,20 +1,10 @@
 @use "variables" as *;
 @use "mixins" as mx;
 
-@include mx.mq("spS") {
-  h1 {
-    border-bottom: solid 3px red;
-  }
-}
-@include mx.mq("spM") {
-  h1 {
-    border-bottom: solid 3px yellow;
-  }
-}
+
+
 @include mx.mq("tab") {
-  h1 {
-    border-bottom: solid 3px aqua !important;
-  }
+
 
   .overView {
     .flex-control {
@@ -82,9 +72,7 @@
 }
 
 @include mx.mq("laptop") {
-  h1 {
-    border-bottom: solid 3px green !important;
-  }
+
 
   .flex-text {
     display: flex;
@@ -210,8 +198,4 @@
     }
   }
 }
-@include mx.mq("retina") {
-  h1 {
-    border-bottom: solid 3px purple !important;
-  }
-}
+
