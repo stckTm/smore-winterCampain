@@ -94,46 +94,46 @@ button {
   }
 }
 
-.font-lg, .setItems__item__main h2, .otherProducts__product a h3, .about__text p, .priceCard__info h2, .purchase-btn {
+.font-lg, .setItems__item__main h2, .otherProducts__product a h3, .priceCard__info h2, .purchase-btn {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 @media (min-width: 320px) {
-  .font-lg, .setItems__item__main h2, .otherProducts__product a h3, .about__text p, .priceCard__info h2, .purchase-btn {
+  .font-lg, .setItems__item__main h2, .otherProducts__product a h3, .priceCard__info h2, .purchase-btn {
     font-size: 16px;
   }
 }
 @media (min-width: 768px) {
-  .font-lg, .setItems__item__main h2, .otherProducts__product a h3, .about__text p, .priceCard__info h2, .purchase-btn {
+  .font-lg, .setItems__item__main h2, .otherProducts__product a h3, .priceCard__info h2, .purchase-btn {
     font-size: 24px;
   }
 }
 @media (min-width: 1280px) {
-  .font-lg, .setItems__item__main h2, .otherProducts__product a h3, .about__text p, .priceCard__info h2, .purchase-btn {
+  .font-lg, .setItems__item__main h2, .otherProducts__product a h3, .priceCard__info h2, .purchase-btn {
     font-size: 26px;
   }
 }
 
-.font-md, .overView__sub__text, .campain__lineUps, .campain__lineUps li p, .setItems__item__sub p, footer, .priceCard .arrow {
+.font-md, .overView__sub__text, .campain__lineUps, .campain__lineUps li p, .setItems__item__sub p, .about__text p, footer, .priceCard .arrow {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 @media (min-width: 320px) {
-  .font-md, .overView__sub__text, .campain__lineUps, .campain__lineUps li p, .setItems__item__sub p, footer, .priceCard .arrow {
+  .font-md, .overView__sub__text, .campain__lineUps, .campain__lineUps li p, .setItems__item__sub p, .about__text p, footer, .priceCard .arrow {
     font-size: 14px;
   }
 }
 @media (min-width: 768px) {
-  .font-md, .overView__sub__text, .campain__lineUps, .campain__lineUps li p, .setItems__item__sub p, footer, .priceCard .arrow {
+  .font-md, .overView__sub__text, .campain__lineUps, .campain__lineUps li p, .setItems__item__sub p, .about__text p, footer, .priceCard .arrow {
     font-size: 16.8px;
   }
 }
 @media (min-width: 1280px) {
-  .font-md, .overView__sub__text, .campain__lineUps, .campain__lineUps li p, .setItems__item__sub p, footer, .priceCard .arrow {
+  .font-md, .overView__sub__text, .campain__lineUps, .campain__lineUps li p, .setItems__item__sub p, .about__text p, footer, .priceCard .arrow {
     font-size: 19.6px;
   }
 }
