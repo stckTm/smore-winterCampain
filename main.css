@@ -24,7 +24,7 @@ button {
   font-family: "Noto Serif JP", serif;
 }
 
-.font-sans, .campain__header ul, .campain__lineUps, .priceCard__specialPrice p {
+.font-sans, .campain__header ul, .priceCard__specialPrice p {
   font-family: "Helvetica", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
 }
 
@@ -94,51 +94,51 @@ button {
   }
 }
 
-.font-lg, .overView__main h1, .overView__main p, .setItems__item__main h2, .otherProducts__product h3, .about__text p, .priceCard__info h2, .purchase-btn {
+.font-lg, .setItems__item__main h2, .otherProducts__product a h3, .about__text p, .priceCard__info h2, .purchase-btn {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 @media (min-width: 320px) {
-  .font-lg, .overView__main h1, .overView__main p, .setItems__item__main h2, .otherProducts__product h3, .about__text p, .priceCard__info h2, .purchase-btn {
+  .font-lg, .setItems__item__main h2, .otherProducts__product a h3, .about__text p, .priceCard__info h2, .purchase-btn {
     font-size: 16px;
   }
 }
 @media (min-width: 768px) {
-  .font-lg, .overView__main h1, .overView__main p, .setItems__item__main h2, .otherProducts__product h3, .about__text p, .priceCard__info h2, .purchase-btn {
+  .font-lg, .setItems__item__main h2, .otherProducts__product a h3, .about__text p, .priceCard__info h2, .purchase-btn {
     font-size: 24px;
   }
 }
 @media (min-width: 1280px) {
-  .font-lg, .overView__main h1, .overView__main p, .setItems__item__main h2, .otherProducts__product h3, .about__text p, .priceCard__info h2, .purchase-btn {
+  .font-lg, .setItems__item__main h2, .otherProducts__product a h3, .about__text p, .priceCard__info h2, .purchase-btn {
     font-size: 26px;
   }
 }
 
-.font-md, .overView__sub__text, .campain__lineUps li p, .setItems__item__sub p, footer, .priceCard .arrow {
+.font-md, .overView__sub__text, .campain__lineUps, .campain__lineUps li p, .setItems__item__sub p, footer, .priceCard .arrow {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 @media (min-width: 320px) {
-  .font-md, .overView__sub__text, .campain__lineUps li p, .setItems__item__sub p, footer, .priceCard .arrow {
+  .font-md, .overView__sub__text, .campain__lineUps, .campain__lineUps li p, .setItems__item__sub p, footer, .priceCard .arrow {
     font-size: 14px;
   }
 }
 @media (min-width: 768px) {
-  .font-md, .overView__sub__text, .campain__lineUps li p, .setItems__item__sub p, footer, .priceCard .arrow {
+  .font-md, .overView__sub__text, .campain__lineUps, .campain__lineUps li p, .setItems__item__sub p, footer, .priceCard .arrow {
     font-size: 16.8px;
   }
 }
 @media (min-width: 1280px) {
-  .font-md, .overView__sub__text, .campain__lineUps li p, .setItems__item__sub p, footer, .priceCard .arrow {
+  .font-md, .overView__sub__text, .campain__lineUps, .campain__lineUps li p, .setItems__item__sub p, footer, .priceCard .arrow {
     font-size: 19.6px;
   }
 }
 
-.font-sm, .overView__sub__attention, .priceCard__info ul {
+.font-sm, .overView__main p, .overView__sub__attention, .priceCard__info ul {
   font-size: 14px;
   font-style: normal;
   font-weight: 200;
@@ -146,12 +146,12 @@ button {
   color: #919190;
 }
 @media (min-width: 768px) {
-  .font-sm, .overView__sub__attention, .priceCard__info ul {
+  .font-sm, .overView__main p, .overView__sub__attention, .priceCard__info ul {
     font-size: 16.8px;
   }
 }
 @media (min-width: 1280px) {
-  .font-sm, .overView__sub__attention, .priceCard__info ul {
+  .font-sm, .overView__main p, .overView__sub__attention, .priceCard__info ul {
     font-size: 19.6px;
   }
 }
@@ -245,6 +245,7 @@ section {
 
 .firstView {
   height: 100vh;
+  min-height: 800px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -259,8 +260,7 @@ section {
   gap: 56px;
 }
 .firstView .copy__main img {
-  width: 250px;
-  height: auto;
+  height: 5vh;
 }
 .firstView .copy__sub h2 {
   font-weight: 400;
@@ -275,8 +275,8 @@ section {
   width: 100%;
   text-align: center;
 }
-.overView__main h1 {
-  font-weight: 700;
+.overView__main p {
+  float: right;
 }
 .overView__main img {
   width: 100%;
@@ -389,13 +389,14 @@ section {
 }
 .concept img {
   width: 100%;
+  min-height: 400px;
   height: 50%;
   object-fit: cover;
 }
 .concept__text {
   height: 50%;
   margin: 0 auto;
-  padding: 30px 30px 40px;
+  padding: 30px 15px 40px;
   display: flex;
   flex-direction: column;
   color: #919190;
@@ -413,17 +414,24 @@ section {
   gap: 30px;
 }
 .otherProducts .container {
+  width: 100%;
   align-items: center;
 }
 .otherProducts .container .flex-control {
   align-items: center;
-}
-.otherProducts__product {
-  text-align: center;
-  padding: 30px 0;
-}
-.otherProducts__product img {
   width: 100%;
+}
+.otherProducts__product a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+.otherProducts__product a img {
+  width: 100%;
+  object-fit: cover;
 }
 .about {
   background-color: #f8f7f2;
@@ -435,7 +443,7 @@ section {
 }
 .about__text {
   margin: 0 auto;
-  padding: 40px 30px 0;
+  padding: 40px 15px 0;
   display: flex;
   flex-direction: column;
   color: #919190;
@@ -468,6 +476,11 @@ footer {
   }
   .overView__main {
     width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
   .overView__sub {
     justify-content: flex-end;
@@ -489,6 +502,7 @@ footer {
   }
   .setItems .purchase {
     width: 100%;
+    max-width: 500px;
     justify-content: space-around;
   }
   .otherProducts .flex-control {
@@ -517,6 +531,9 @@ footer {
   .section-header .flex-text {
     gap: 56px;
     align-items: baseline;
+  }
+  .firstView .copy__main img {
+    height: 5vh;
   }
   .firstView .copy__main .flex-text {
     gap: 40px !important;
@@ -552,6 +569,7 @@ footer {
   }
   .setItems .setItems__item__sub {
     padding-left: 30px;
+    align-items: flex-start;
     width: 50%;
   }
   .setItems .setItems__item__img {
@@ -581,10 +599,30 @@ footer {
   }
   .otherProducts .container {
     display: flex;
+    width: 100%;
+    gap: 20px;
+  }
+  .otherProducts .container .flex-control {
+    gap: 20px;
+  }
+  .otherProducts .container .flex-control:nth-child(1) {
+    width: 40%;
+  }
+  .otherProducts .container .flex-control:nth-child(2) {
+    width: 60%;
   }
   .otherProducts__product {
+    padding: 0 10px;
     width: auto;
-    padding: 30px;
+  }
+  .otherProducts__product a {
+    justify-content: flex-start;
+    width: 100%;
+    height: 300px;
+    gap: 5px;
+  }
+  .otherProducts__product a img {
+    height: 200px;
   }
   .about .flex-control {
     flex-direction: row;

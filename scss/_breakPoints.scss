@@ -15,6 +15,11 @@
     }
     &__main {
       width: 80%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
     }
 
     &__sub {
@@ -44,6 +49,7 @@
 
     .purchase {
       width: 100%;
+      max-width: 500px;
       justify-content: space-around;
     }
   }
@@ -89,6 +95,9 @@
 
   .firstView {
     .copy__main {
+      img{
+        height: 5vh;
+      }
       .flex-text {
         gap: $font-strong !important;
       }
@@ -138,7 +147,7 @@
 
       &__sub {
         padding-left: $space-md;
-
+        align-items: flex-start;
         width: 50%;
       }
 
@@ -178,11 +187,35 @@
   .otherProducts {
     .container {
       display: flex;
+      width: 100%;
+      gap:20px;
+
+      .flex-control{
+      gap:20px;
+
+        &:nth-child(1){
+          width: 40%;
+        }
+        &:nth-child(2){
+          width: 60%;
+        }
+      }
     }
 
     &__product {
+      padding: 0 10px;
       width: auto;
-      padding: $space-md;
+
+    a{
+      justify-content: flex-start;
+      width: 100%;
+      height: 300px;
+      gap: $space-xs;
+
+      img{
+        height: 200px;
+      }
+    }
     }
   }
 

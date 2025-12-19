@@ -2,6 +2,7 @@
 
 .firstView {
   height: 100vh;
+  min-height: 800px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -19,8 +20,7 @@
     &__main {
       @extend .title-font;
       img {
-        width: 250px;
-        height: auto;
+        height: 5vh;
       }
     }
     &__sub h2 {
@@ -42,12 +42,10 @@
   &__main {
     width: 100%;
     text-align: center;
-    h1 {
-      @extend .font-lg;
-      font-weight: 700;
-    }
+
     p {
-      @extend .font-lg;
+      @extend .font-sm;
+      float: right;
     }
 
     img {
@@ -118,7 +116,7 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    @extend .font-sans;
+    @extend .font-md;
 
     li {
       width: 30vw;
@@ -203,6 +201,7 @@
 
   img {
     width: 100%;
+    min-height: 400px;
     height: 50%;
     object-fit: cover;
   }
@@ -210,7 +209,7 @@
   &__text {
     height: 50%;
     margin: 0 auto;
-    padding: $padding-md $padding-md $padding-lg;
+    padding: $padding-md $padding-sm $padding-lg;
     display: flex;
     flex-direction: column;
     color: $cGray;
@@ -231,31 +230,40 @@
   gap: $space-md;
 
   .container {
+    width: 100%;
     align-items: center;
 
     .flex-control {
       align-items: center;
+      width: 100%;
+      
     }
   }
 
   &__product {
-    text-align: center;
-    padding: $space-md 0;
-
-    img {
+    // padding: $space-sm;
+    a {
       width: 100%;
-    }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: $space-xs;
 
-    h3{
-      @extend .font-lg;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      h3 {
+        @extend .font-lg;
+      }
     }
   }
 }
 
 .about {
   background-color: $cCream;
-
-
   img {
     width: 100%;
     max-height: 500px;
@@ -264,7 +272,7 @@
 
   &__text {
     margin: 0 auto;
-    padding: $padding-lg $padding-md 0;
+    padding: $padding-lg $padding-sm 0;
     display: flex;
     flex-direction: column;
     color: $cGray;
@@ -278,13 +286,13 @@
       margin-bottom: $space-sm;
     }
 
-    p{
+    p {
       @extend .font-lg;
     }
   }
 }
 
-footer{
+footer {
   width: 100%;
   height: 10vh;
   min-height: 120px;
