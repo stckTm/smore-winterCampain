@@ -163,7 +163,7 @@ section {
 }
 @media (min-width: 768px) {
   section {
-    padding: 7% 7%;
+    padding: 5% 7%;
   }
 }
 
@@ -575,6 +575,9 @@ footer {
   }
   .concept__text {
     height: 60%;
+  }
+  .concept__text p {
+    font-size: 20px;
   }
   .otherProducts .container {
     display: flex;
