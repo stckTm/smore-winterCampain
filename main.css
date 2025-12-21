@@ -522,6 +522,7 @@ footer {
     justify-content: space-between;
   }
 }
+
 @media (min-width: 1280px) {
   .flex-text {
     display: flex;
