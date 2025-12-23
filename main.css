@@ -221,6 +221,7 @@ section {
   color: #ffffff;
   padding: 10px;
   background-color: #ff3131;
+  text-align: center;
 }
 .priceCard__specialPrice h2 {
   height: 32px;
