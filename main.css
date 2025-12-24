@@ -507,6 +507,10 @@ footer {
     max-width: 500px;
     justify-content: space-around;
   }
+
+  .otherProducts{
+    margin-bottom: 5%;
+  }
   .otherProducts .flex-control {
     flex-direction: row !important;
   }
