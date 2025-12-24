@@ -322,8 +322,8 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 18px 5%;
-  justify-content: center;
+  /* gap: 18px 5%; */
+  justify-content: space-around;
   align-content: center;
   align-items: center;
 }
@@ -333,7 +333,8 @@ section {
 }
 .campain__lineUps li img {
   width: 100%;
-  margin-bottom: 5%;
+  padding: 10px 10px 0;
+  margin-bottom: 0;
 }
 .setItems {
   padding: 0px 30px 40px;
