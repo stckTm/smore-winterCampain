@@ -362,6 +362,7 @@ section {
 }
 .setItems__item__img {
   height: 30vh;
+  min-height: 300px;
   width: 100%;
 }
 .setItems__item__img img {
