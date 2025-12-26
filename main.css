@@ -181,8 +181,6 @@ button {
 
 .font-md,
 .overView__sub__text,
-.campain__lineUps,
-.campain__lineUps li p,
 .setItems__item__sub p,
 .about__text p,
 footer,
@@ -195,8 +193,6 @@ footer,
 @media (min-width: 320px) {
   .font-md,
   .overView__sub__text,
-  .campain__lineUps,
-  .campain__lineUps li p,
   .setItems__item__sub p,
   .about__text p,
   footer,
@@ -207,8 +203,6 @@ footer,
 @media (min-width: 768px) {
   .font-md,
   .overView__sub__text,
-  .campain__lineUps,
-  .campain__lineUps li p,
   .setItems__item__sub p,
   .about__text p,
   footer,
@@ -219,8 +213,6 @@ footer,
 @media (min-width: 1280px) {
   .font-md,
   .overView__sub__text,
-  .campain__lineUps,
-  .campain__lineUps li p,
   .setItems__item__sub p,
   .about__text p,
   footer,
@@ -427,26 +419,6 @@ section {
 .campain__header ul li:nth-child(odd) {
   width: 180px;
 }
-.campain__lineUps {
-  width: 95%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  /* gap: 18px 5%; */
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-}
-.campain__lineUps li {
-  width: 30vw;
-  text-align: center;
-}
-.campain__lineUps li img {
-  width: 100%;
-  padding: 10px 10px 0;
-  margin-bottom: 0;
-}
 
 .campain__pouch .flex-control {
   gap: 15px;
@@ -624,7 +596,7 @@ footer {
   }
 
   .campain .container {
-    gap: 80px;
+    gap: 50px;
   }
   .campain__header {
     width: 100%;
@@ -632,21 +604,17 @@ footer {
   .campain__header ul {
     justify-content: space-around;
   }
-  .campain__lineUps {
-    flex-wrap: nowrap;
-  }
 
   .campain__pouch .flex-control {
     flex-direction: row !important;
     justify-content: space-around;
 
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .campain__pouch .flex-control img {
-    width: 40%;
-    max-width: 400px;
+    width: 45%;
+    max-width: 500px;
   }
 
   .campain__pouch h2 {
@@ -656,7 +624,7 @@ footer {
   }
 
   .setItems {
-    padding: 7% 7%;
+    padding:  0 7% 7%;
   }
   .setItems__item {
     padding: 5% 4%;
